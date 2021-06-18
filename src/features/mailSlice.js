@@ -19,7 +19,9 @@ export const incrementAsync = createAsyncThunk(
 export const mailSlice = createSlice({
   name: 'mail',
   initialState: {
-    sendMessageIsOpen: false
+    // this is where the states are
+    sendMessageIsOpen: false,
+    selectedMail: null
   },
 
   // The `reducers` field lets us define reducers and generate associated actions
@@ -29,16 +31,24 @@ export const mailSlice = createSlice({
     },
     closeSendMessage: (state) => {
       state.sendMessageIsOpen = false;
+    }, 
+    selectMail: (state, action) => {
+      state.selectedMail = action.payload;
     }
    
   },
 });
 
-export const { openSendMessage, closeSendMessage } = mailSlice.actions;
+export const { openSendMessage, closeSendMessage, selectMail } = mailSlice.actions;
 
 // The function below is called a selector and allows us to select a value from
 // the state. Selectors can also be defined inline where they're used instead of
 // in the slice file. For example: `useSelector((state: RootState) => state.mail.value)`
+
+// format for selectors
+// export const selectorName = (state) => state.SLICENAME.SLICE__VARIABLE
 export const selectSendMessageIsOpen = (state) => state.mail.sendMessageIsOpen;
+export const selectSelectedMail = (state) => state.mail.selectedMail;
+
 
 export default mailSlice.reducer;

@@ -4,7 +4,6 @@ export const yomaSlice = createSlice({
     name: 'yoma',
     initialState: {
         college: 'Obafemi Awolowo University', 
-        fuck: false
     },
 
     // REDUCERS
