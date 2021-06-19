@@ -1,0 +1,77 @@
+[debug] [2021-06-19T10:58:17.412Z] ----------------------------------------------------------------------
+[debug] [2021-06-19T10:58:17.417Z] Command:       C:\Program Files\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-06-19T10:58:17.418Z] CLI Version:   9.3.0
+[debug] [2021-06-19T10:58:17.418Z] Platform:      win32
+[debug] [2021-06-19T10:58:17.419Z] Node Version:  v12.14.1
+[debug] [2021-06-19T10:58:17.421Z] Time:          Sat Jun 19 2021 11:58:17 GMT+0100 (West Africa Standard Time)
+[debug] [2021-06-19T10:58:17.421Z] ----------------------------------------------------------------------
+[debug] [2021-06-19T10:58:17.421Z] 
+[debug] [2021-06-19T10:58:17.425Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-06-19T10:58:17.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-19T10:58:17.476Z] > authorizing via signed-in user
+[debug] [2021-06-19T10:58:17.477Z] [iam] checking project redux-clone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-06-19T10:58:17.481Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-19T10:58:17.482Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-19T10:58:38.575Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-06-19T10:58:38.587Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/redux-clone [none]
+[debug] [2021-06-19T10:58:39.245Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/redux-clone 200
+[debug] [2021-06-19T10:58:39.247Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/redux-clone {"projectId":"redux-clone","projectNumber":"233208147255","displayName":"gmail-redux-clone","name":"projects/redux-clone","resources":{"hostingSite":"redux-clone","storageBucket":"redux-clone.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'redux-clone'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-06-19T10:58:39.276Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-19T10:58:39.277Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-19T10:58:39.786Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 19 Jun 2021 10:55:05 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-19T10:58:39.910Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/redux-clone/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-06-19T10:59:01.633Z] Error: connect ETIMEDOUT 216.58.223.202:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.223.202:443
+[debug] [2021-06-19T10:59:14.075Z] ----------------------------------------------------------------------
+[debug] [2021-06-19T10:59:14.079Z] Command:       C:\Program Files\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-06-19T10:59:14.080Z] CLI Version:   9.3.0
+[debug] [2021-06-19T10:59:14.080Z] Platform:      win32
+[debug] [2021-06-19T10:59:14.080Z] Node Version:  v12.14.1
+[debug] [2021-06-19T10:59:14.082Z] Time:          Sat Jun 19 2021 11:59:14 GMT+0100 (West Africa Standard Time)
+[debug] [2021-06-19T10:59:14.082Z] ----------------------------------------------------------------------
+[debug] [2021-06-19T10:59:14.082Z] 
+[debug] [2021-06-19T10:59:14.087Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-06-19T10:59:14.140Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-19T10:59:14.141Z] > authorizing via signed-in user
+[debug] [2021-06-19T10:59:14.142Z] [iam] checking project redux-clone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-06-19T10:59:14.147Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/redux-clone:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-06-19T10:59:35.377Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 216.58.223.234:443
+[debug] [2021-06-19T10:59:35.389Z] > refreshing access token with scopes: []
+[debug] [2021-06-19T10:59:35.394Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-19T10:59:56.437Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-06-19T11:00:17.623Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\github.js:11:16)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:5:24)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+[error] 
+[error] Error: Failed to get Firebase project redux-clone. Please make sure the project exists and your account has permission to access it.
