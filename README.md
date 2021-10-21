@@ -1,44 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Gmail Redux Clone 
+A simple web application that mimics the Gmail Application by sending dummy emails built using React JS and Redux
+Link https://redux-clone.web.app
 
-## Available Scripts
+## How to run the app
+1. Either fork or download the app(by cloning it) and open the folder in the cli
+2. install all dependencies using the `yarn add` command
+3. Start the web server using the `yarn start` command, the app will be served at http://localhost:3000/
+4. Go to http://localhost:3000/ in your browser, then sign in with google to start using the app
 
-In the project directory, you can run:
+## How to Get Started using the App
+1. Click on the Sign In with Google Button and select a gmail account.
+2. Click on the `Compose Button` in the top-left corner of the app
+3. A modal will appear on the bottom right corner of the page(this is where you put in the details of the email you want to send) ![gmailShot3](https://user-images.githubusercontent.com/47899828/138367155-286881e3-bd21-47be-8ec8-3a3dcafea4c8.png)
+4. Click the `Send button` to send your email message
+5. Click on the circle on the top right corner of the application to Logout. ![gmailLogoutShot4](https://user-images.githubusercontent.com/47899828/138367512-f584fa29-2b16-44a4-98c5-1b1a5d972b9a.png)
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## User Stories
+1.A user has to log in with google to be able to send dummy/fake email messages
 
-### `yarn test`
+## Features
+- Sending Dummy Emails
+  - emails sent gets uploaded to firebase firestore and then it is displayed on the application
+ - Log in with Google Feature
+ 
+## Stack
+- React JS
+- Redux
+- Material UI
+- Firebase Firestore
+- Firebase(Sign in with Google)
+- Firebase hosting
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What the app looks like
 
-### `yarn build`
+![gmailShot1](https://user-images.githubusercontent.com/47899828/138367971-7eac449c-facd-4d46-841c-3f289f920404.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![gmailShot2](https://user-images.githubusercontent.com/47899828/138367998-1b52f39f-8bdd-426e-bfb2-eab7faff7840.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![gmailShot3](https://user-images.githubusercontent.com/47899828/138368006-03a894a9-a09d-4fbb-80ee-342a8465fae6.png)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
